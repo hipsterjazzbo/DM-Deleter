@@ -11,7 +11,7 @@ if(isset($_SESSION['oauth_token']) && isset($_SESSION['oauth_token_secret']))
 
 else
 {
-	$twitter->oAuthRequestToken('http://caleb.wasabi.cc/dm_deleter');
+	$twitter->oAuthRequestToken('http://hipsterjazzbo.com/extras/dm_deleter');
 	if(!isset($_GET['oauth_token'])) $twitter->oAuthAuthorize();
 	$response = $twitter->oAuthAccessToken($_GET['oauth_token'], $_GET['oauth_verifier']);
 	
