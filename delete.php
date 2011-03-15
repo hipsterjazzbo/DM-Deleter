@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'twitter.php';
 $twitter = new Twitter('jGrDrZUnUQAkGeGdsZo7Og', 'n44LC4FcDsPUyWkkjcR00Dtz1ZncRHAlQSPOE0wsIs');
 $twitter->setOAuthToken($_SESSION['oauth_token']);

@@ -57,9 +57,10 @@ for($i = 1; $i <= 25; $i++)
 			$('.checker, .select_all').attr('disabled', 'disabled');
 			
 			$.post('delete.php', to_delete, function(){
+				//alert('wham');
 				$('.checker:checked').parent().parent().slideUp().remove();
 				$('.checker, .select_all').removeAttr('disabled');
-			}, 'json');
+			});
 		});
 	});
 	</script>
